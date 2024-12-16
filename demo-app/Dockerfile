@@ -9,7 +9,7 @@ RUN groupadd -r appgroup && \
 WORKDIR /app
 
 # Copier les fichiers nécessaires au projet
-COPY ./requirements.txt .
+COPY demo-app/requirements.txt .
 
 # Installation des dépendances
 RUN pip install --no-cache-dir -r requirements.txt
